@@ -44,20 +44,21 @@ public class ASumar {
 		return null;
 	}
 	
-	public static int total(String valor_inicial) {
+	/**
+	 * hace un sumatorio de los digitos obtenidos.
+	 * @param cad <p>Número en formato de texto </p>
+	 * @return <p>"suma de números"</p>
+	 */
+	
+	public int total(String valor_inicial) {
         int suma = 0;
         for (int i = 0; i < valor_inicial.length(); i++) {
             // Cadena de un dígito.
             String digito = valor_inicial.substring(i, i+1);
-            suma = suma + Integer.getInteger(digito);  //Conversión de caracter a entero
+            suma = suma + Integer.parseInt(digito);  //Conversión de caracter a entero
         }
         return suma;
 
     }
-	
-	public static void main(String[] args) {
 		
-		//System.out.println(ASumar.total("56"));
-	}
-
 }

@@ -24,8 +24,8 @@ class AsumadorTest {
 	@Test
 	public void sumatorioTotal() {
         ASumar sumi = new ASumar();
-        int resultado = sumi.total("20");
-        assertEquals("",resultado );
+        int resultado = sumi.total("56");
+        assertEquals(11 ,resultado );
     }
 
 }
